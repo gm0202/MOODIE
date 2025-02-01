@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>My Diary</title>
+  </head>
+  <body>
+  
+    <section class="section-new">
+      <h1>New Entry</h1>
+      <div class="container">
+        <form autocomplete="off" id="entryForm" action="">
+          <label class="title">Title Of The Entry</label>
+          <input
+            type="text"
+            name="entry-title"
+            id="entry-title"
+            class="entry-title"
+            placeholder="Title ✏️"
+          />
+          <label class="title">Description</label>
+          <textarea
+            name="daily-entry"
+            id="entry"
+            class="entry-box"
+            placeholder="Dear Diary ...✒️"
+          ></textarea>
+          <button type="submit">Add To Diary</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-old" id="entryResultsSection">
+      <h1>Previous Entries</h1>
+      <div class="container">
+        <div class="history"></div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

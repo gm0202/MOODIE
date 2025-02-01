@@ -1,0 +1,191 @@
+html {
+  scroll-behavior: smooth;
+  background-color: hsla(180, 38%, 70%, 0.9);
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  color: hsl(0, 79%, 72%);
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0.5em auto;
+  font-weight: 900;
+}
+
+button {
+  display: block;
+  padding: 0.5em 1em;
+  border: none;
+  font-size: 1.2rem;
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(0, 79%, 72%);
+  color: hsl(60, 80%, 90%);
+  transition: all 0.1s;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(60, 80%, 90%);
+  color: hsl(0, 79%, 72%);
+  font-weight: 900;
+  transform: scale(1.08);
+}
+
+.section-new {
+  padding: 1em 1em;
+  width: 70%;
+  float: left;
+  margin: 1em auto;
+  margin-left: 100px;
+}
+
+.section-old {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  background: hsl(60, 80%, 90%);
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 79%, 72%, 0.7);
+  border-radius: 100px;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 79%, 72%)
+}
+
+.title {
+  display: block;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.entry-title {
+  width: 20em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 5px;
+  border: unset;
+  background-color: hsl(60, 80%, 90%);
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  font-weight : 500;
+}
+
+.entry-title:focus {
+  outline-color: hsl(0, 79%, 72%);
+  font-family: 'Space Mono', monospace;
+  color: hsl(0, 79%, 72%);
+  font-size: 1rem;
+}
+
+.entry-title::placeholder {
+  color: hsl(0, 79%, 72%);
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+}
+
+.entry-box {
+  width: 35em;
+  height: 20em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 5px;
+  border: unset;
+  font-size: 1.2rem;
+  background-color: hsl(60, 80%, 90%);
+  font-family: 'Space Mono', monospace;
+}
+
+.entry-box:focus {
+  outline-color: hsl(0, 79%, 72%);
+  font-family: 'Space Mono', monospace;
+  color: hsl(0, 79%, 72%);
+  font-size: 1.2rem;
+}
+
+.entry-box::placeholder {
+  color: hsl(0, 79%, 72%);
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+}
+
+.history {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: unset;
+  overflow-y: scroll;
+}
+
+.single-entry-div {
+  max-width: 100%;
+  padding: 1em 1em;
+}
+
+.single-entry-heading {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.single-entry-date {
+  background-color: hsl(60, 80%, 90%);
+  padding: 0.5em;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.single-entry-text {
+  width: 20em;
+  height: 15em;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 5px;
+  border: unset;
+  background-color: hsl(60, 80%, 90%);
+  overflow-y: auto;
+}
+
+
+.header{
+  /* border:1px solid blue; */
+  width:95%;
+  margin: 0 auto;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo{
+  font-size: 2em;
+  font-weight: 800;
+  color:var(--primary-color);
+  letter-spacing: .02em;
+  cursor: pointer;
+  user-select: none;
+}
