@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app {
+    height: 100vh;
+    display: flex;
+    
+}
+.time-picker , .sound-picker ,.time-player  {
+    flex: 1;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.time-player {
+    position: relative;
+  
+}
+.time-player svg {
+    position: absolute;
+    height: 50%;
+    pointer-events: none;
+    transform: rotate(-90deg);
+}
+.time-player .time-display {
+    position: absolute;
+    font-size: 50px;
+    bottom: 10%;
+}
+video{
+    position: fixed;
+    width: 100%;
+    z-index: -2;
+}
+
+.time-picker button {
+    height: 10%;
+    width: 30%;
+    border: 2px solid lightgoldenrodyellow ; 
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: lightgoldenrodyellow;
+    font-size: 20px;
+}
+.time-picker button:hover {
+    color: black;
+    background: rgb(253, 215, 200);
+    border-color :  rgb(250, 202, 183);
+}
+.sound-picker button {
+    width: 130px;
+    height: 130px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 20px;
+    
+}
+.sound-picker #rain {
+    background-color:rgb(32, 72, 117); 
+}
+ .sound-picker #beach{
+    background-color: rgb(189, 75, 29);
+}
+.sound-picker button img{
+    height: 100%;
+}
+.sound-picker button:focus {
+    outline-style: none; 
+}
+
+.sound-picker #rain:hover {
+    background-color:rgb(49, 135, 163)
+    
+}
+.sound-picker #beach:hover{
+    background-color: rgb(241, 143, 105);
+    
+}

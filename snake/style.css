@@ -1,0 +1,27 @@
+body {
+  text-align:center;
+  font-family: helvetica;
+}
+
+canvas {
+  border: 2px solid rgb(10, 10, 10);
+}
+h3{
+  text-align: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 33px;
+
+}
+
+body {
+  /* margin: 0; */
+  font-family: Arial, sans-serif;
+  background-image: url('pics/forest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  
+}
+
